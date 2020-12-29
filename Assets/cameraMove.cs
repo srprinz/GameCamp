@@ -10,7 +10,7 @@ public class cameraMove : MonoBehaviour
         void Update()
         {
             Vector3 newPosition = new Vector3(
-            Mathf.Clamp(target.position.x, 0, 1000),
+            Mathf.Clamp(target.position.x, 0, 65),
             transform.position.y, 
             transform.position.z);
             transform.position = Vector3.Lerp(transform.position, newPosition, moveSpeed * Time.deltaTime);
