@@ -280,7 +280,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 23e55147c0dd441818168d3fd477d0f9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d877d4fec5cc4408b3a2c491c252eba, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1009,3 +1009,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseButton: {fileID: 1841822704}
+  musicSource: {fileID: 0}
