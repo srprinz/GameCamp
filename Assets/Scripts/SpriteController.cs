@@ -9,6 +9,8 @@ public class SpriteController : MonoBehaviour
     float TimeInterval ;
     int score;
     Animator anim;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,6 +93,8 @@ public class SpriteController : MonoBehaviour
                         anim.SetBool("isWalking", true);
                         anim.SetBool("isWalkingBack", false);
                         anim.SetBool("isIdle", false);
+                        audioSource= GetComponent<AudioSource>();
+                        audioSource.Play();
                         Vector3 position = this.transform.position;
                         position.x++;
                         this.transform.position = position;
@@ -106,10 +110,11 @@ public class SpriteController : MonoBehaviour
                         anim.SetBool("isWalkingBack", true);
                         anim.SetBool("isWalking", false);
                         anim.SetBool("isIdle", false);
+                        audioSource= GetComponent<AudioSource>();
+                        audioSource.Play();
                         Vector3 position = this.transform.position;
                         position.x--;
                         this.transform.position = position;
-
                         score -= (int)(1);
                       //  TimeInterval = 0;
                         print("The score is :"+score);
