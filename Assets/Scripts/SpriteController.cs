@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SpriteController : MonoBehaviour
 {
     float TimeInterval ;
-    int score;
+    public int score = 0;
     Animator anim;
     AudioSource audioSource;
 
@@ -99,6 +99,7 @@ public class SpriteController : MonoBehaviour
                         position.x++;
                         this.transform.position = position;
                         score += (int)(1);
+                        scoreScript.scoreValue += 1;
                         //TimeInterval = 0;
 
                         print("The score is :"+score);
@@ -116,12 +117,16 @@ public class SpriteController : MonoBehaviour
                         position.x--;
                         this.transform.position = position;
                         score -= (int)(1);
+                        scoreScript.scoreValue -= 1;
+
+
                       //  TimeInterval = 0;
                         print("The score is :"+score);
                     }
                 }
 
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -10, 75), transform.position.y, transform.position.z);
+
     }
 
 }
