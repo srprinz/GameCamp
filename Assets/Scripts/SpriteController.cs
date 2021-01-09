@@ -152,7 +152,7 @@ public class SpriteController : MonoBehaviour
                     
                 }
 
-	transform.position = new Vector3(Mathf.Clamp(transform.position.x, -50, 50), transform.position.y, transform.position.z);
+	transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42, 50), transform.position.y, transform.position.z);
 
     }
 
