@@ -27,7 +27,8 @@ public class SpriteController : MonoBehaviour
         anim.SetBool("isWalkingBack", false);
         anim.SetBool("isIdle", true);
 
-                if ((8.0-0.5 <= TimeInterval && TimeInterval < 8.5)||
+                if (
+                (8.0-0.5 <= TimeInterval && TimeInterval < 8.5)||
                 (13.333-0.5 <= TimeInterval && TimeInterval < 13.833)||
                 (14.667-0.5 <= TimeInterval && TimeInterval < 15.167)||
                 (19.333-0.5 <= TimeInterval && TimeInterval < 19.833)||
@@ -39,14 +40,15 @@ public class SpriteController : MonoBehaviour
                 (30.667-0.5<= TimeInterval && TimeInterval < 31.167)||
                 (31.333-0.5<= TimeInterval && TimeInterval < 31.833)||
                 (36.0-0.5 <= TimeInterval && TimeInterval < 36.5)||
-                (38.333-0.5 <= TimeInterval && TimeInterval < 38.833)||
-                (39.0-0.5 <= TimeInterval && TimeInterval < 39.5)||
+                (41.333-0.5 <= TimeInterval && TimeInterval < 41.833)||
+                (42.0-0.5 <= TimeInterval && TimeInterval < 42.5)||
                 (45.333-0.5 <= TimeInterval && TimeInterval < 45.833)||
                 (47.333-0.5 <= TimeInterval && TimeInterval < 47.833)||
                 (51.333-0.5 <= TimeInterval && TimeInterval < 51.833)||
                 (56.667-0.5 <= TimeInterval && TimeInterval < 57.167)||
                 (57.333-0.5 <= TimeInterval && TimeInterval < 57.833)||
                 (58.0-0.5 <= TimeInterval && TimeInterval < 58.5)||
+                (63.333-0.5 <= TimeInterval && TimeInterval < 63.833)||
                 (66.667-0.5 <= TimeInterval && TimeInterval < 67.167)||
                 (67.103-0.5<= TimeInterval && TimeInterval < 67.603)||
                 (67.333-0.5 <= TimeInterval && TimeInterval < 67.833)||
@@ -65,10 +67,12 @@ public class SpriteController : MonoBehaviour
                 (82.667-0.5 <= TimeInterval && TimeInterval < 83.167)||
                 (83.333-0.5 <= TimeInterval && TimeInterval < 83.833)||
                 (83.769-0.5 <= TimeInterval && TimeInterval < 84.769)||
+                (84.0-0.5 <= TimeInterval && TimeInterval < 84.5)||
                 (88.0-0.5 <= TimeInterval && TimeInterval < 88.5)||
                 (88.436-0.5 <= TimeInterval && TimeInterval < 88.936)||
                 (88.667-0.5 <= TimeInterval && TimeInterval < 89.167)||
                 (89.333-0.5 <= TimeInterval && TimeInterval < 89.833)||
+                (93.333-0.5 <= TimeInterval && TimeInterval < 93.833)||
                 (94.436-0.5 <= TimeInterval && TimeInterval < 94.936)||
                 (95.333-0.5 <= TimeInterval && TimeInterval < 95.833)||
                 (98.667-0.5 <= TimeInterval && TimeInterval < 99.167)||
@@ -87,7 +91,18 @@ public class SpriteController : MonoBehaviour
                 (115.333-0.5 <= TimeInterval && TimeInterval < 115.833)||
                 (115.769-0.5 <= TimeInterval && TimeInterval < 116.269)||
                 (116.667-0.5 <= TimeInterval && TimeInterval < 117.167)||
-                (117.103-0.5 <= TimeInterval && TimeInterval < 117.603)
+                (117.103-0.5 <= TimeInterval && TimeInterval < 117.603)||
+                (120.667-0.5 <= TimeInterval && TimeInterval < 120.667+0.5)||
+                (121.103-0.5 <= TimeInterval && TimeInterval < 121.103+0.5)||
+                (121.333-0.5 <= TimeInterval && TimeInterval < 121.333+0.5)||
+                (121.769-0.5 <= TimeInterval && TimeInterval < 121.769+0.5)||
+                (122.0-0.5 <= TimeInterval && TimeInterval < 122.0+0.5)||
+                (126.0-0.5 <= TimeInterval && TimeInterval < 126.0+0.5)||
+                (126.436-0.5 <= TimeInterval && TimeInterval < 126.436+0.5)||
+                (126.667-0.5 <= TimeInterval && TimeInterval < 126.667+0.5)||
+                (127.103-0.5 <= TimeInterval && TimeInterval < 127.103+0.5)||
+                (127.333-0.5 <= TimeInterval && TimeInterval < 127.333+0.5)||
+                (127.769-0.5 <= TimeInterval && TimeInterval < 127.769+0.5)
                 ){
                     if(Input.anyKeyDown){
                         anim.SetBool("isWalking", true);
