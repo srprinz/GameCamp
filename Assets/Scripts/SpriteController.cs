@@ -40,8 +40,8 @@ public class SpriteController : MonoBehaviour
                 (30.667-0.5<= TimeInterval && TimeInterval < 31.167)||
                 (31.333-0.5<= TimeInterval && TimeInterval < 31.833)||
                 (36.0-0.5 <= TimeInterval && TimeInterval < 36.5)||
-                (38.333-0.5 <= TimeInterval && TimeInterval < 38.833)||
-                (39.0-0.5 <= TimeInterval && TimeInterval < 39.5)||
+                (41.333-0.5 <= TimeInterval && TimeInterval < 41.833)||
+                (42.0-0.5 <= TimeInterval && TimeInterval < 42.5)||
                 (45.333-0.5 <= TimeInterval && TimeInterval < 45.833)||
                 (47.333-0.5 <= TimeInterval && TimeInterval < 47.833)||
                 (51.333-0.5 <= TimeInterval && TimeInterval < 51.833)||
