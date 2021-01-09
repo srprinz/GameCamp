@@ -20,12 +20,13 @@ public class SpriteController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 minScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
-    	Vector3 maxScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        //Vector3 minScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
+    	//Vector3 maxScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
         TimeInterval += Time.deltaTime;
         anim.SetBool("isWalking", false);
         anim.SetBool("isWalkingBack", false);
         anim.SetBool("isIdle", true);
+        anim.SetBool("NextLevel", false);
 
                 if (
                 (8.0-0.5 <= TimeInterval && TimeInterval < 8.5)||
@@ -108,6 +109,8 @@ public class SpriteController : MonoBehaviour
                         anim.SetBool("isWalking", true);
                         anim.SetBool("isWalkingBack", false);
                         anim.SetBool("isIdle", false);
+                        anim.SetBool("NextLevel", false);
+
                         audioSource= GetComponent<AudioSource>();
                         audioSource.Play();
                         Vector3 position = this.transform.position;
@@ -126,21 +129,30 @@ public class SpriteController : MonoBehaviour
                         anim.SetBool("isWalkingBack", true);
                         anim.SetBool("isWalking", false);
                         anim.SetBool("isIdle", false);
+                        anim.SetBool("NextLevel", false);
+
                         audioSource= GetComponent<AudioSource>();
                         audioSource.Play();
                         Vector3 position = this.transform.position;
-                        position.x--;
+                        position.x++;
                         this.transform.position = position;
-                        score -= (int)(1);
-                        scoreScript.scoreValue -= 1;
+                        score += (int)(1);
+                        scoreScript.scoreValue += 1;
 
 
                       //  TimeInterval = 0;
                         print("The score is :"+score);
                     }
                 }
+                 if(score >= 75 && TimeInterval > 128.0){
+                    anim.SetBool("isWalkingBack", false);
+                    anim.SetBool("isWalking", false);
+                    anim.SetBool("isIdle", false);
+                    anim.SetBool("NextLevel", true);
+                    
+                }
 
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -10, 75), transform.position.y, transform.position.z);
+	transform.position = new Vector3(Mathf.Clamp(transform.position.x, -50, 50), transform.position.y, transform.position.z);
 
     }
 
