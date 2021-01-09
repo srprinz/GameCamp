@@ -134,10 +134,10 @@ public class SpriteController : MonoBehaviour
                         audioSource= GetComponent<AudioSource>();
                         audioSource.Play();
                         Vector3 position = this.transform.position;
-                        position.x++;
+                        position.x--;
                         this.transform.position = position;
-                        score += (int)(1);
-                        scoreScript.scoreValue += 1;
+                        score -= (int)(1);
+                        scoreScript.scoreValue -= 1;
 
 
                       //  TimeInterval = 0;
