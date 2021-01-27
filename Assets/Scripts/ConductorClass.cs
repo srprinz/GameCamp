@@ -46,6 +46,12 @@ public class ConductorClass : MonoBehaviour
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
         //determine how many beats since the song started
         songPositionInBeats = songPosition / secPerBeat;
+        if(PauseScript.GameIsPaused){
+            musicSource.Pause();
+        }
+        else{
+            musicSource.UnPause();
+        }
         
     }
 }
