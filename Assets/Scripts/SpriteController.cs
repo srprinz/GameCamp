@@ -15,6 +15,7 @@ public class SpriteController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -144,7 +145,7 @@ public class SpriteController : MonoBehaviour
                         print("The score is :"+score);
                     }
                 }
-                 if(score >= 75 && TimeInterval > 128.0){
+                  if(score >= 75 && TimeInterval > 128.0){
                     anim.SetBool("isWalkingBack", false);
                     anim.SetBool("isWalking", false);
                     anim.SetBool("isIdle", false);
