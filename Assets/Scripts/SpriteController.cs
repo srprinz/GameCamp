@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class SpriteController : MonoBehaviour
 {
-    float TimeInterval ;
-    public int score = 0;
+    public static float TimeInterval ;
+    public static int score = 0;
     Animator anim;
     AudioSource audioSource;
 
