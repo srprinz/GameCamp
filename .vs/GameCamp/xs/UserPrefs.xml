@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{B5DB0AEB-F8CD-9C6A-ADA1-DDD2A1650674}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PauseMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonFX.cs">
     <Files>
-      <File FileName="Assets/SpriteController.cs" Line="1" Column="1" />
-      <File FileName="Assets/PauseMenu.cs" Line="25" Column="54" />
-      <File FileName="Assets/Scripts/ConductorClass.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ButtonFX.cs" Line="23" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e160fc56-b7f1-4335-bc68-6b846eb169f9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="86cd11a8-ee35-4403-b928-f663237734b8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
